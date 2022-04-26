@@ -1,27 +1,29 @@
 import React, { useState } from 'react'
 import { Tabs } from 'antd'
+import EqBorder from './eqBorder'
+import EqCancel from './eqCancel'
+import EqList from './eqList'
 
 const { TabPane } = Tabs
 
-const tabs = [
-    {
-        key: 'eqlist',
-        tab: '设备清单',
-        component: <p>设备清单内容</p>
-    },
-    {
-        key: 'eqBorder',
-        tab: '边界清单',
-        component: <p>边界清单内容</p>,
-    },
-    {
-        key: 'eqCancel',
-        tab: '取消边界清单',
-        component: <p>取消边界清单内容</p>
-    },
-]
-
 const lists = () => {
+    const tabs = [
+        {
+            key: 'eqlist',
+            tab: '设备清单',
+            component: <EqList />
+        },
+        {
+            key: 'eqBorder',
+            tab: '边界清单',
+            component: <EqBorder />,
+        },
+        {
+            key: 'eqCancel',
+            tab: '取消边界清单',
+            component: <EqCancel />
+        },
+    ]
     const [activeTabKey, setActiveTabKey] = useState(tabs[0]?.key)
 
     return (
