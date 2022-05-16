@@ -29,6 +29,7 @@ const lists = () => {
     return (
         <Tabs
             tabPosition="left"
+            type="card"
             activeKey={activeTabKey}
             onChange={(active) => setActiveTabKey(active)}
         >
