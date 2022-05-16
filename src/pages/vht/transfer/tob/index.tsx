@@ -1,14 +1,15 @@
 import React from 'react'
 import { } from 'antd'
-import ApplicationForm  from './applicationForm'
+import ApplicationForm from './applicationForm'
 import ApplicationList from './applicationList'
 
 
 const tob = () => {
     return (
         <>
-            <ApplicationForm/>
-            <ApplicationList/>  
+            <ApplicationForm />
+            master分支写的code
+            <ApplicationList />
         </>
     )
 }
